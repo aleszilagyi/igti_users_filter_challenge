@@ -25,6 +25,7 @@ const updateState = (
   };
 
   btnElement.forEach((btn) => {
+    btn.addEventListener("click", () => inputElement.value = "")
     btn.addEventListener("click", debounce(onInput, 500));
   });
   inputElement.addEventListener("input", debounce(onInput, 500));

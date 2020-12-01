@@ -153,5 +153,3 @@ updateState(
 );
 
 preventFormSubmit();
-btnElement.addEventListener("click", () => inputElement.value = "")
-clrElement.addEventListener("click", () => inputElement.value = "")
