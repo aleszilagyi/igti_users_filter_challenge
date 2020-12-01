@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <title>User</title>
+  </head>
+  <body>
+    <div id="app" class="center">
+      <header class="">
+        <h1>Pesquisa de usuários</h1>
+      </header>
+      <section class="container">
+        <div>
+          <form class="col s12" id="form">
+            <div class="col s12 center-align">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">account_circle</i>
+                <input
+                  id="userInput"
+                  type="text"
+                  placeholder="Busca"
+                  class="validate"
+                />
+              </div>
+              <div id="btn" class="btn col s6 center-align"><span>MOSTRAR TODOS</span></div>
+              <div id="btnClear" class="btn col s6 center-align"><span>LIMPAR</span></div>
+            </div>
+          </form>
+        </div>
+
+        <div class="row" id="userData"></div>
+      </section>
+    </div>
+    <script src="/scripts/debounce.js"></script>
+    <script src="/scripts/autoresults.js"></script>
+    <script src="/scripts/script.js" defer></script>
+  </body>
+</html>
